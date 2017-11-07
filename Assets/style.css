@@ -1,0 +1,51 @@
+*{font-family: Verdana;}
+body{margin: 0;}
+/*Menu*/
+	/*Menu -  default*/
+		nav, .menu{
+			height: 5vh;
+			padding: 0;
+		}
+
+		.menu{
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			border-radius: 0 0 10px 10px;
+			border: 1px solid darkblue; 
+			background: #1e5799; /* Old browsers */
+
+
+		}
+		.menu li{
+			list-style-type: none;
+			flex-grow: 1;
+			max-width: 200px;
+			height: 100%;
+			box-sizing: border-box;
+			padding-top: 1vh;
+			border-right: 1px solid darkblue; 
+			text-align: center;
+
+			transition: ease 0.5s;
+		    -moz-transition: ease 0.5s; /* Firefox 4 */
+		    -webkit-transition: ease 0.5s; /* Safari and Chrome */
+		    -o-transition: ease 0.5s; /* Opera */
+		    -ms-transition: ease 0.5s; /* Explorer 10 */
+		}
+		.menu li:first-child{border-left: 1px solid darkblue;}
+		.menu a{
+			color: white;
+			font-family: Arial;
+			font-size: 1.5em;
+		}
+
+	/*Menu : Hover*/
+		.menu li:hover{
+			background: purple;
+			transition: ease 0.5s;
+		    -moz-transition: ease 0.5s; /* Firefox 4 */
+		    -webkit-transition: ease 0.5s; /* Safari and Chrome */
+		    -o-transition: ease 0.5s; /* Opera */
+		    -ms-transition: ease 0.5s; /* Explorer 10 */
+		}
