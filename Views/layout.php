@@ -7,9 +7,10 @@
 <body>
 	<nav>
 		<ul class="menu">
-			<li><a href="/portfolio">Accueil</a></li>
-			<li><a href="/portfolio/services.html">Services</a></li>
+			<li><a href="/portfolio/">Accueil</a></li>
+			<li><a href="/portfolio/index/services.html">Services</a></li>
 			<li><a href="#">Réalisations</a></li>
+			<li><a href="/portfolio/index/CV.html">CV</a></li>
 			<li><a href="#">Contact</a></li>
 		</ul>
 	</nav>

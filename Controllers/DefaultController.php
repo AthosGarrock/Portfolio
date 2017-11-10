@@ -9,9 +9,9 @@ class DefaultController extends Controller
 {
 
 	function __construct(array $params){
-		//Nom complet de l'action
+		//Action appelée dans le layout.html(section main)
 		$action = $params['action'];
-		//Nom de l'action ( sans suffixe -Action )
+		//Nom de la page
 		$aName = str_replace('Action', '', $params['action']);
 
 		//Si l'on essaie d'utiliser une méthode non déclarée dans le controller, stoppe l'execution.
@@ -23,11 +23,15 @@ class DefaultController extends Controller
 	}
 
 	public function indexAction(){
-		include('Views/Default/accueil.php');
+		include('Views/Default/accueil.html');
 	}
 
 	public function servicesAction(){
-		include('Views/Default/services.php');
+		include('Views/Default/services.html');
+	}
+
+	public function CVAction(){
+		include('Views/Default/cv.html');
 	}
 }
 ?>
